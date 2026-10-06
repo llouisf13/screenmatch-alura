@@ -1,3 +1,6 @@
+package br.com.alura.screenmach.catalogo;
+
+
 public class Titulo {
     private String nome;
     private int anoDeLancamento;
@@ -10,7 +13,7 @@ public class Titulo {
         return nome;
     }
 
-    public void setNome(){
+    public void setNome(String nome){
         this.nome = nome;
     }
 
@@ -30,7 +33,7 @@ public class Titulo {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
-    public int getIncluidoNoPlanos(){
+    public boolean isIncluidoNoPlano(){
         return incluidoNoPlano;
     }
 
@@ -56,12 +59,14 @@ public class Titulo {
         System.out.println("Duração do filme " + nome + " em minutos: " + duracaoEmMinutos);
     }
 
-    public void avaliaFilme(double nota){
+    public void avalia(double nota){
         somaDasAvaliacoes += nota;
         totalAvaliacoes++;
     }
 
-    double pegaMedia(){
+    public double pegaMedia(){
         return somaDasAvaliacoes / totalAvaliacoes;
     }
+
+
 }

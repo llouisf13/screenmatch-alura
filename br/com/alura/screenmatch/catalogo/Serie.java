@@ -1,3 +1,5 @@
+package br.com.alura.screenmach.catalogo;
+
 public class Serie extends Titulo {
     private int temporadas;
     private boolean ativa;

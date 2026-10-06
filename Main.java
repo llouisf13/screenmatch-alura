@@ -1,8 +1,38 @@
+import br.com.alura.screenmach.catalogo.Filme;
+import br.com.alura.screenmach.calculo.Calculadora;
+import br.com.alura.screenmach.catalogo.Serie;
+
 public class Main {
     public static void main(String[] args){
 
-
+        Filme f1 = new Filme();
+        f1.setNome("Quarto de Guerra");
+        f1.setAnoDeLancamento(2015);
+        f1.setIncluidoNoPlano(true);
+        f1.setDuracaoEmMinutos(180);
+        f1.avalia(5.4);
+        f1.avalia(5.3);
+        f1.avalia(9.7);
         
+
+        Serie serie = new Serie();
+        serie.setNome("Stranger Things");
+        serie.setAnoDeLancamento(2016);
+        serie.setIncluidoNoPlano(true);
+        serie.setTemporadas(10);
+        serie.setEpisodiosPorTemporada(20);
+        serie.setMinutosPorEpisodios(30);
+
+
+        serie.avalia(7.1);
+        serie.avalia(9.4);
+        serie.avalia(9.5);
+        
+        Calculadora calculadora = new Calculadora();
+        calculadora.inclui(f1);
+        calculadora.inclui(serie);
+        
+        System.out.println("Tempo total: " +calculadora.getCalculaTempo());
 
         /*ContaBancaria conta1 = new ContaBancaria();
 
