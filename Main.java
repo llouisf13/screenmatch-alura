@@ -1,7 +1,23 @@
 public class Main {
     public static void main(String[] args){
 
-        Pessoa p1 = new Pessoa();
+        ContaBancaria conta1 = new ContaBancaria();
+
+        conta1.setNumeroConta(55440234);
+        conta1.setSaldo(564.54);
+        conta1.titular = "Luís";
+
+        System.out.println("Número conta: " + conta1.getNumeroConta());
+        System.out.println("Saldo: " + conta1.getSaldo());
+        System.out.println("Titular: " + conta1.titular);
+
+
+        conta1.setSaldo(1500);
+        System.out.println("Novo saldo: " + conta1.getSaldo());
+
+
+        /*Pessoa p1 = new Pessoa();
+
         p1.exibeDados();
 
         Calculadora c1 = new Calculadora();
@@ -35,7 +51,7 @@ public class Main {
 
         
 
-        /*Filme film1 = new Filme();
+        Filme film1 = new Filme();
 
         film1.nome = "Everything Everywhere All At Once";
         film1.anoDeLancamento = 2024;
@@ -49,7 +65,10 @@ public class Main {
         
         
         System.out.println("A média dos usuários são: " + film1.pegaMedia());
-        
+
         */
+        
+
+        
     }
 }
