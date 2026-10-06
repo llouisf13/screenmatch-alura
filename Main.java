@@ -10,10 +10,25 @@ public class Main {
         System.out.println("Número conta: " + conta1.getNumeroConta());
         System.out.println("Saldo: " + conta1.getSaldo());
         System.out.println("Titular: " + conta1.titular);
-
-
         conta1.setSaldo(1500);
         System.out.println("Novo saldo: " + conta1.getSaldo());
+
+        Pessoas p2 = new Pessoas();
+        p2.setNome("Luís Felipe");
+        p2.setIdade(15);
+        System.out.println("Nome: " + p2.getNome());
+        System.out.println("Idade: " + p2.getIdade());
+        p2.retornaIdade();
+
+        Produto produto = new Produto();
+        produto.setNome("Macarrão");
+        produto.setPrecos(5.50);
+        System.out.println("Nome: " + produto.getNome());
+        System.out.println("Valor: " + produto.getPrecos());
+
+        produto.desconto(10);
+
+        System.out.println("Desconto: " +produto.getPrecos());
 
 
         /*Pessoa p1 = new Pessoa();
