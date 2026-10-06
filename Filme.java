@@ -13,8 +13,6 @@ public class Filme {
         this.incluidoNoPlano = true;
         this.somaDasAvaliacoes = 0.0;
         this.totalAvaliacoes = 0;
-        
-        
     }
 
     public Filme(String nome, int anoDeLancamento, int duracaoEmMinutos, boolean incluidoNoPlano, double somaDasAvaliacoes, int totalAvaliacoes){
@@ -27,17 +25,15 @@ public class Filme {
     }
 
 
+    public void avaliaFilme(double nota){
+        somaDasAvaliacoes += nota;
+        totalAvaliacoes++;
+    }
 
     public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("Duração do filme " + nome + " em minutos: " + duracaoEmMinutos);
-        System.out.println("Total de avaliações: " + totalAvaliacoes);
-    }
-
-    public void avaliaFilme(double nota){
-        somaDasAvaliacoes += nota;
-        totalAvaliacoes++;
     }
 
     double pegaMedia(){
