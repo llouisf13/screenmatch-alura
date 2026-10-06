@@ -50,16 +50,15 @@ public class Titulo {
         return totalAvaliacoes;
     }
 
-
-    public void avaliaFilme(double nota){
-        somaDasAvaliacoes += nota;
-        totalAvaliacoes++;
-    }
-
     public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("Duração do filme " + nome + " em minutos: " + duracaoEmMinutos);
+    }
+
+    public void avaliaFilme(double nota){
+        somaDasAvaliacoes += nota;
+        totalAvaliacoes++;
     }
 
     double pegaMedia(){

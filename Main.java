@@ -1,7 +1,10 @@
 public class Main {
     public static void main(String[] args){
 
-        ContaBancaria conta1 = new ContaBancaria();
+
+        
+
+        /*ContaBancaria conta1 = new ContaBancaria();
 
         conta1.setNumeroConta(55440234);
         conta1.setSaldo(564.54);
@@ -28,9 +31,7 @@ public class Main {
 
         produto.desconto(10);
 
-        System.out.println("Desconto: " +produto.getPrecos());
-
-
+        System.out.println("Desconto: " +produto.getPrecos()); */
         /*Pessoa p1 = new Pessoa();
 
         p1.exibeDados();
