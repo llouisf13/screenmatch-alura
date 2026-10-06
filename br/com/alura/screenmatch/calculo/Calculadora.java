@@ -1,5 +1,5 @@
-package br.com.alura.screenmach.calculo;
-import br.com.alura.screenmach.catalogo.Titulo;
+package br.com.alura.screenmatch.calculo;
+import br.com.alura.screenmatch.catalogo.Titulo;
 
 public class Calculadora {
 

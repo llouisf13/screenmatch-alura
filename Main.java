@@ -1,11 +1,36 @@
-import br.com.alura.screenmach.catalogo.Filme;
-import br.com.alura.screenmach.calculo.Calculadora;
-import br.com.alura.screenmach.catalogo.Serie;
-
+//import br.com.alura.screenmatch.catalogo.Filme;
+//import br.com.alura.screenmatch.calculo.Calculadora;
+//import br.com.alura.screenmatch.catalogo.Serie;
 public class Main {
     public static void main(String[] args){
 
-        Filme f1 = new Filme();
+        Car carro = new Car();
+        carro.definirModelo("Corolla");
+        carro.definirPreco(50000, 40000, 25000);
+        carro.exibir();
+       
+
+        Cachorro cachorro = new Cachorro();
+        cachorro.emitirSom();
+        cachorro.abanar();
+
+        Gato gato = new Gato();
+            gato.emitirSom();
+            gato.arranharMoveis();
+        
+
+        CBancaria conta = new CBancaria();
+        conta.depositar(200);
+        conta.consultaSaldo();
+
+        ContaCorrente contacorrente = new ContaCorrente();
+        contacorrente.depositar(1500);
+        contacorrente.sacar(100);
+        contacorrente.consultaSaldo();
+        contacorrente.cobrarTarifaMensal();
+        conta.consultaSaldo();
+
+        /*Filme f1 = new Filme();
         f1.setNome("Quarto de Guerra");
         f1.setAnoDeLancamento(2015);
         f1.setIncluidoNoPlano(true);
@@ -33,7 +58,7 @@ public class Main {
         calculadora.inclui(serie);
         
         System.out.println("Tempo total: " +calculadora.getCalculaTempo());
-
+*/
         /*ContaBancaria conta1 = new ContaBancaria();
 
         conta1.setNumeroConta(55440234);

@@ -1,4 +1,4 @@
-package br.com.alura.screenmach.catalogo;
+package br.com.alura.screenmatch.catalogo;
 
 public class Filme extends Titulo {
     private String diretor;
